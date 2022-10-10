@@ -2,8 +2,10 @@ const PORT = 8000;
 const axios = require("axios").default;
 const cheerio = require("cheerio");
 const express = require("express");
-
+const cors = require('cors')
 const app = express();
+
+app.use(cors())
 
 const url = "https://www.theguardian.com/us";
 
